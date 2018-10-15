@@ -40,7 +40,7 @@ tigris.mobs.register(":tigris_mobs:rat", {
     script = tigris.mobs.common.peaceful(),
 })
 
-tigris.mobs.register_spawn(":tigris_mobs:rat", {
+tigris.mobs.register_spawn("tigris_mobs:rat", {
     ymax = tigris.world_limits.max.y,
     ymin = tigris.world_limits.min.y,
 
