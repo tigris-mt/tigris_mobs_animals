@@ -1,4 +1,4 @@
-tigris.mobs.register("tigris_mobs_animals:baby_fountain", {
+tigris.mobs.register(":tigris_mobs:baby_fountain", {
     description = "Baby Fountain",
     collision = {-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
     box = {

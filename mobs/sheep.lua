@@ -13,9 +13,9 @@ end
 local colors = {"white", "black", "brown", "grey", "dark_grey"}
 local sheep = {}
 for _,color in ipairs(colors) do
-    local name = "tigris_mobs_animals:sheep_" .. color
+    local name = "tigris_mobs:sheep_" .. color
     table.insert(sheep, name)
-    tigris.mobs.register(name, {
+    tigris.mobs.register(":" .. name, {
         description = "Sheep",
         collision = {-0.4, -0.4, -0.4, 0.4, 0.4, 0.4},
         box = {
@@ -73,7 +73,7 @@ for _,color in ipairs(colors) do
         end),
     })
 
-    tigris.mobs.register_mob_node(name .. "_shorn", name, {
+    tigris.mobs.register_mob_node(":" .. name .. "_shorn", name, {
         tiles = textures(color, true),
     })
 

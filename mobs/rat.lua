@@ -1,4 +1,4 @@
-tigris.mobs.register("tigris_mobs_animals:rat", {
+tigris.mobs.register(":tigris_mobs:rat", {
     description = "Rat",
     collision = {-0.25, -0.1, -0.5, 0.25, 0.1, 0.5},
     box = {
@@ -40,7 +40,7 @@ tigris.mobs.register("tigris_mobs_animals:rat", {
     script = tigris.mobs.common.peaceful(),
 })
 
-tigris.mobs.register_spawn("tigris_mobs:rat", {
+tigris.mobs.register_spawn(":tigris_mobs:rat", {
     ymax = tigris.world_limits.max.y,
     ymin = tigris.world_limits.min.y,
 

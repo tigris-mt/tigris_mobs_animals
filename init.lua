@@ -1,1 +1,1 @@
-tigris.include("mobs")
+tigris.include_dir("mobs")
