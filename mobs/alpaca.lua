@@ -10,7 +10,7 @@ local function textures(color, shorn)
     }
 end
 
-local colors = {"red", "blue", "yellow", "green", "orange", "violet", "pink", "cyan"}
+local colors = {"red", "blue", "yellow", "green", "orange", "violet", "pink", "cyan", "magenta", "dark_green"}
 local alpacas = {}
 for _,color in ipairs(colors) do
     local name = "tigris_mobs:alpaca_" .. color
