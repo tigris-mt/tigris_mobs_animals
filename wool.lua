@@ -1,4 +1,5 @@
 -- Expects mod node <name>_shorn.
+-- Expects produce_wool_time in data as seconds.
 -- Place grow_wool as idle action.
 -- Enable shear_wool as interaction.
 
@@ -12,7 +13,7 @@ tigris.mobs.register_action("grow_wool", {
         if leat < lshear then
             return
         end
-        if minetest.get_gametime() - lshear >= 60 * 10 then
+        if minetest.get_gametime() - lshear >= self._data.produce_wool_time then
             self.textures = {self.def.name}
             self._data.shorn = false
         end
@@ -22,7 +23,7 @@ tigris.mobs.register_action("grow_wool", {
 tigris.mobs.register_interaction("shear_wool", {
     func = function(self, context)
         local stack = context.other:get_wielded_item()
-        if stack:get_name() ~= "mobs:shears" or self._data.shorn or tigris.mobs.is_protected(self.object, context.other:get_player_name()) then
+        if not self._data.tame or stack:get_name() ~= "mobs:shears" or self._data.shorn or tigris.mobs.is_protected(self.object, context.other:get_player_name()) then
             return
         end
 

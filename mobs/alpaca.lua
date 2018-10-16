@@ -61,6 +61,8 @@ for _,color in ipairs(colors) do
             self.hp_max = 4
             data.jump = 5
             data.wool_max = 5
+            data.produce_wool_time = 60 * 8
+            data.produce_milk_time = 60 * 35
         end,
 
         start = "wander",
@@ -73,6 +75,11 @@ for _,color in ipairs(colors) do
             s.flee.interactions.shear_wool = false
             table.insert(s.wander.actions, "grow_wool")
             table.insert(s.standing.actions, "grow_wool")
+
+            s.global.interactions.get_milk = true
+            s.flee.interactions.get_milk = false
+            table.insert(s.wander.actions, "produce_milk")
+            table.insert(s.standing.actions, "produce_milk")
         end),
     })
 
