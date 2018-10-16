@@ -34,6 +34,8 @@ for _,color in ipairs(colors) do
 
         drops = {
             {100, "mobs:meat_raw"},
+            {50, "mobs:meat_raw"},
+            {25, "mobs:meat_raw"},
             {100, "tigris_mobs:bone"},
             {25, "tigris_mobs:eye"},
             {15, "tigris_mobs:eye"},
