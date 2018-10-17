@@ -51,6 +51,20 @@ register("tigris_mobs:clay_worm", {
     strength = 1.5,
 })
 
+register("tigris_mobs:dirt_worm", {
+    desc = "Dirt Worm",
+    texture = "default_dirt.png",
+    drops = {
+        {100, "default:dirt"},
+        {50, "default:dirt"},
+        {25, "default:dirt"},
+    },
+    nodes = {"group:soil", "group:sand", "group:stone"},
+    chance = 12000,
+    light = minetest.LIGHT_MAX / 2,
+    strength = 1,
+})
+
 register("tigris_mobs:sand_worm", {
     desc = "Sand Worm",
     texture = "default_sand.png",
