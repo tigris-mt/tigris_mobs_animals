@@ -45,7 +45,7 @@ register("tigris_mobs:clay_worm", {
         {50, "default:clay_lump"},
         {25, "default:clay_lump"},
     },
-    nodes = {"group:soil", "group:sand", "default:stone"},
+    nodes = {"group:soil", "group:sand", "group:stone"},
     chance = 12000,
     light = minetest.LIGHT_MAX / 2,
     strength = 1.5,
