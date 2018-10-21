@@ -32,6 +32,8 @@ tigris.mobs.register_interaction("get_milk", {
         context.other:set_wielded_item(stack)
 
         minetest.add_item(self.object:getpos(), context.other:get_inventory():add_item("main", ItemStack("mobs:bucket_milk")))
+
+        return true
     end,
 })
 

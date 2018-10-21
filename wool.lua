@@ -38,6 +38,8 @@ tigris.mobs.register_interaction("shear_wool", {
 
         stack:add_wear(655)
         context.other:set_wielded_item(stack)
+
+        return true
     end,
 })
 
