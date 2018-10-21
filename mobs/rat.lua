@@ -26,7 +26,7 @@ tigris.mobs.register(":tigris_mobs:rat", {
         {15, "tigris_mobs:eye"},
     },
 
-    habitat_nodes = {"group:stone"},
+    habitat_nodes = {"group:stone", "mobs:cheeseblock"},
 
     on_init = function(self, data)
         self.hp_max = 2
@@ -49,5 +49,5 @@ tigris.mobs.register_spawn("tigris_mobs:rat", {
 
     chance = 10000,
 
-    nodes = {"group:stone"},
+    nodes = {"group:stone", "mobs:cheeseblock"},
 })
