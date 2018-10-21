@@ -21,8 +21,8 @@ tigris.mobs.register(":tigris_mobs:rat", {
     level = 1,
 
     drops = {
-        {20, "mobs:meat_raw"},
-        {15, "tigris_mobs:bone"},
+        {50, "mobs:meat_raw"},
+        {25, "tigris_mobs:bone"},
         {15, "tigris_mobs:eye"},
     },
 
@@ -47,7 +47,7 @@ tigris.mobs.register_spawn("tigris_mobs:rat", {
     light_min = 0,
     light_max = minetest.LIGHT_MAX / 2,
 
-    chance = 5000,
+    chance = 10000,
 
     nodes = {"group:stone"},
 })
